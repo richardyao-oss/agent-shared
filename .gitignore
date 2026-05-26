@@ -1,0 +1,30 @@
+﻿# Secrets and local runtime files
+*.env
+.env
+.env.*
+*token*.json
+*secret*.json
+config.json
+*.log
+
+# Agent runtime/cache/session files
+.claude/
+.codex/
+.assistant/
+cache/
+sessions/
+session-env/
+shell-snapshots/
+history.jsonl
+file-history/
+paste-cache/
+backups/
+
+# Build/dependency noise
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
