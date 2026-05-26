@@ -17,6 +17,18 @@ Shared capability directory for Claude, Codex, and other local AI agents.
 - Frontend/design workflow preference: `memories/frontend-design-preferences.md`, `skills/huashu-design/`.
 - Feishu doc writer skill source: `skills/feishu-doc-writer/`.
 
+## Git Remotes
+
+- GitLab: `git@gitlab.futunn.com:richardyao/agent-shared.git`
+- GitHub: `git@github.com:richardyao-oss/agent-shared.git`
+
+On this Windows machine, pushes may need the explicit SSH key:
+
+```powershell
+$key = ($env:USERPROFILE -replace '\\','/') + '/.ssh/id_ed25519_gitlab_futunn'
+$env:GIT_SSH_COMMAND = "ssh -i $key -o IdentitiesOnly=yes"
+```
+
 ## Rules
 
 - Do not store tokens, API keys, OAuth secrets, `.env`, logs, session history, or cache files here.
